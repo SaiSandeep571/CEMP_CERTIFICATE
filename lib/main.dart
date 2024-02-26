@@ -1,20 +1,23 @@
+import 'package:cemp_certificate/home.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:sizer/sizer.dart';
+ double width = 3.8;
+ double height = 8.5;
+ double fontsize = 1.2;
 
 void main() {
-  runApp(const MainApp());
+  runApp(CempCertificate());
 }
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
+class CempCertificate extends StatelessWidget {
+  CempCertificate({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
-    );
+   return Sizer(builder: (context , Orientation ,DeviceType){
+    return GetMaterialApp(home: Homepage(),);
+  });
+
   }
 }
