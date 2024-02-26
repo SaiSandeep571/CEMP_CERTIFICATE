@@ -1,4 +1,5 @@
-import 'package:cemp_certificate/home.dart';
+import 'package:cemp_certificate/dash.dart';
+import 'package:cemp_certificate/home/home.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
@@ -16,7 +17,7 @@ class CempCertificate extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
    return Sizer(builder: (context , Orientation ,DeviceType){
-    return GetMaterialApp(home: Homepage(),);
+    return GetMaterialApp(home: Dashboard(),);
   });
 
   }
