@@ -1,19 +1,14 @@
-import 'package:cemp_certificate/home/components/eventcard.dart';
+import 'package:cemp_certificate/home/home.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:sizer/sizer.dart';
 
-class Homepage extends StatefulWidget {
-  const Homepage({super.key});
+class Login extends StatelessWidget {
+  const Login({super.key});
 
-  @override
-  State<Homepage> createState() => _HomepageState();
-}
-
-class _HomepageState extends State<Homepage> {
   @override
   Widget build(BuildContext context) {
-    return  Material(
+    return Material(
       child: Container(
           padding: EdgeInsets.all(3.64.h),
           decoration: BoxDecoration(
@@ -48,6 +43,8 @@ class _HomepageState extends State<Homepage> {
                     Center(
                       child: Column(
                         children: [
+          
+          
                           Container(
                             height: 5.76.h,
                             width: 85.78.w,
@@ -59,7 +56,7 @@ class _HomepageState extends State<Homepage> {
                             decoration: InputDecoration(
                               border: InputBorder.none,
                               contentPadding: EdgeInsets.all(4.w),
-                              hintText: 'PRP21',
+                              hintText: 'Enter PRP***** code',
                               hintStyle: GoogleFonts.poppins(
                                 fontSize: 11.66.sp,
                                 fontWeight: FontWeight.w600,
@@ -71,22 +68,29 @@ class _HomepageState extends State<Homepage> {
           
                           SizedBox(height: 2.h,),
           
-                      Container(
-                      alignment: Alignment.center,
-                      height: 4.82.h,
-                      width: 53.94.w,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(1.41.h),
-                        color:Color.fromRGBO(255, 255, 255, 0.59),
+                      InkWell(
+                         onTap: (){
+                         Navigator.push(context,MaterialPageRoute(
+                          builder: (context) => Homepage()),
+                         );
+                         },
+                        child: Container(
+                        alignment: Alignment.center,
+                        height: 4.82.h,
+                        width: 53.94.w,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(1.41.h),
+                          color:Color.fromRGBO(255, 255, 255, 0.59),
+                        ),
+                        child: Text('Get Certificate',
+                        style: GoogleFonts.poppins(
+                          fontSize: 11.66.sp,
+                          fontWeight: FontWeight.w600,
+                          color: Color(0xFFFFFFFF)
+                        ),
+                        ),
+                                            ),
                       ),
-                      child: Text('Get Certificate',
-                      style: GoogleFonts.poppins(
-                        fontSize: 11.66.sp,
-                        fontWeight: FontWeight.w600,
-                        color: Color(0xFFFFFFFF)
-                      ),
-                      ),
-                    ),
           
                     SizedBox(height: 1.52.h),
           
@@ -107,24 +111,10 @@ class _HomepageState extends State<Homepage> {
           
                     SizedBox(height: 1.76.h,),
           
-                    Image.asset(width: 352,'assets/line.png'),
-
-                    SizedBox(height: 1.88.h,),
+                    Image.asset(width: 352,'assets/line.png')
                         ],
                       ),
                     ),
-
-                    Text('Your Certificate Dashboard',
-                    style: GoogleFonts.poppins(
-                      fontSize: 13.33.sp,
-                      fontWeight: FontWeight.w700,
-                      color: Color(0xFFFFFFFF)
-                    ),
-                    ),
-                    SizedBox(height: 1.52.h,),
-
-                    Eventcard(),
-                    Eventcard(),
                    
                 
                 
@@ -134,7 +124,5 @@ class _HomepageState extends State<Homepage> {
                 ),
         ),
     );
-
-  
   }
 }
