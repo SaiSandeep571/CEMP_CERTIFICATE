@@ -22,47 +22,33 @@ class _DownloadcardState extends State<Downloadcard> {
           ),
           child: Column(
             children: [
-            
-              SizedBox(height: 2.80.h,),
-                    
-              Text('Complete your Registration',
+              Image.asset('assets/download.png'),
+              Text('Certificate Generating ',
               textAlign: TextAlign.center,
               style: GoogleFonts.poppins(
-                fontSize: 13.33.sp,
-                fontWeight:FontWeight.w700,
-                color: Color(0xFF25054D)
+                fontSize: 11.66.sp,
+                fontWeight:FontWeight.w600,
+                color: Color(0xFF000000)
               ),
               ),
-            
-              SizedBox(height:1.34.h ,),
-                     
-              Text('To maximize your chances of receiving interview \n calls, complete your profile with all fields',
+              Text('Please be patient your certificate will\nbe generated soon',
               textAlign: TextAlign.center, 
-              style: GoogleFonts.nunitoSans(
-                fontSize: 10.83.sp,
+              style: GoogleFonts.poppins(
+                fontSize: 8.33.sp,
                 fontWeight: FontWeight.w400,
-                color:Color.fromRGBO(0, 0, 0, 0.8)
+                color:Color(0xFF000000)
               ),
               ),
-            
-              SizedBox(height: 4.60.h,),
-          
-              Image.asset('assets/download.png',
-                      height: 22.02.h,
-                      width: 61.11.w,
-                      ),
-            
-              SizedBox(height: 2.13.h,),
           
               Container(
                 alignment: Alignment.center,
-                height: 5.50.h,
-                width: 74.15.w,
+                height: 4.45.h,
+                width: 51.02.w,
                 decoration: BoxDecoration(
-                  color: Color(0xFF1F41BA),
-                  borderRadius:BorderRadius.circular(5.61.h),
+                  color: Color.fromRGBO(47, 41, 119, 0.76),
+                  borderRadius:BorderRadius.circular(1.17.h),
                 ),
-                child: Text('Complete Your Profile',
+                child: Text('Download Now',
                 style: GoogleFonts.poppins(
                   fontSize: 11.66.sp,
                   fontWeight: FontWeight.w600,
