@@ -1,4 +1,4 @@
-import 'package:cemp_certificate/home/components/eventcard.dart';
+import 'package:cemp_certificate/home/components/dialogbox.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:sizer/sizer.dart';
@@ -121,9 +121,19 @@ class _HomepageState extends State<Homepage> {
                       color: Color(0xFFFFFFFF)
                     ),
                     ),
-                    SizedBox(height: 1.52.h,),
+                    SizedBox(height: 1.h,),
 
-                    
+                      Expanded(
+            child: ListView(
+              children: [
+               Diagolbox(),
+               Diagolbox(),
+               Diagolbox(),
+               Diagolbox(),
+               Diagolbox(),
+              ],
+            ),
+          ),
                    
                 
                 
