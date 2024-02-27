@@ -1,4 +1,4 @@
-import 'package:cemp_certificate/home/components/duty.dart';
+import 'package:cemp_certificate/home/components/dutycard.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:sizer/sizer.dart';
