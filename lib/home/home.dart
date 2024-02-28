@@ -11,6 +11,7 @@ class Homepage extends StatefulWidget {
 }
 
 class _HomepageState extends State<Homepage> {
+   bool showcard=false;
   @override
   Widget build(BuildContext context) {
     return  Material(
@@ -59,7 +60,7 @@ class _HomepageState extends State<Homepage> {
                             decoration: InputDecoration(
                               border: InputBorder.none,
                               contentPadding: EdgeInsets.all(4.w),
-                              hintText: 'PRP21',
+                              hintText: 'Enter PRP***** code',
                               hintStyle: GoogleFonts.poppins(
                                 fontSize: 11.66.sp,
                                 fontWeight: FontWeight.w600,
@@ -71,22 +72,29 @@ class _HomepageState extends State<Homepage> {
           
                           SizedBox(height: 2.h,),
           
-                      Container(
-                      alignment: Alignment.center,
-                      height: 4.82.h,
-                      width: 53.94.w,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(1.41.h),
-                        color:Color.fromRGBO(255, 255, 255, 0.59),
+                      InkWell(
+                        onTap:() {
+                          setState(() {
+                            showcard=true;
+                          });
+                        },
+                        child: Container(
+                        alignment: Alignment.center,
+                        height: 4.82.h,
+                        width: 53.94.w,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(1.41.h),
+                          color:Color.fromRGBO(255, 255, 255, 0.59),
+                        ),
+                        child: Text('Get Certificate',
+                        style: GoogleFonts.poppins(
+                          fontSize: 11.66.sp,
+                          fontWeight: FontWeight.w600,
+                          color: Color(0xFFFFFFFF)
+                        ),
+                        ),
+                                            ),
                       ),
-                      child: Text('Get Certificate',
-                      style: GoogleFonts.poppins(
-                        fontSize: 11.66.sp,
-                        fontWeight: FontWeight.w600,
-                        color: Color(0xFFFFFFFF)
-                      ),
-                      ),
-                    ),
           
                     SizedBox(height: 1.52.h),
           
@@ -123,22 +131,22 @@ class _HomepageState extends State<Homepage> {
                     ),
                     SizedBox(height: 1.h,),
 
+                    if(showcard)
+
                       Expanded(
-            child: SizedBox(
-              child: ListView(
-                children: [
-                 Diagolbox(),
-                 Diagolbox(),
-                 Diagolbox(),
-                 Diagolbox(),
-                 Diagolbox(),
-                ],
-              ),
+            child: ListView(
+              children: [
+               Diagolbox(),
+               Diagolbox(),
+               Diagolbox(),
+               Diagolbox(),
+               Diagolbox(),
+              ],
             ),
           ),
                    
                 
-                Container( child: _is loading,)
+                
                 
                 
                   ],

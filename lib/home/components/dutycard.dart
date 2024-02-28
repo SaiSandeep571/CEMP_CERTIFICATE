@@ -40,10 +40,10 @@ class Dutyleavecard extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
 
-                      SizedBox(height: 1.h,),
+                      SizedBox(height: 0.5.h,),
 
                       Container(
-                        padding: EdgeInsets.all(0.19.h),
+                        alignment: Alignment.center,
                         height: 6.11.h,
                         width: 16.57.w,
                         decoration: BoxDecoration(
@@ -54,30 +54,34 @@ class Dutyleavecard extends StatelessWidget {
                           children: [
                             Text('On',
                             style: GoogleFonts.poppins(
-                              fontSize: 5.83.sp,
+                              fontSize: 5.8.sp,
                               fontWeight: FontWeight.w500,
-                              color: Color(0xFF191352)
+                              color: Color(0xFF191352),
+                              height: 0.2.h
                               ),
                             ),
                             Text('21,22',
                             style: GoogleFonts.poppins(
-                              fontSize: 10.sp,
+                              fontSize: 8.5.sp,
                               fontWeight: FontWeight.w600,
-                              color: Color(0xFF191352)
+                              color: Color(0xFF191352),
+                              height: 0.15.h
                               ),
                             ),
                             Text('Mar - 2022',
                             style: GoogleFonts.poppins(
-                              fontSize: 7.5.sp,
+                              fontSize: 6.5.sp,
                               fontWeight: FontWeight.w500,
-                              color: Color(0xFF191352)
+                              color: Color(0xFF191352),
+                              height: 0.15.h
                               ),
                             ),
                             Text('Hrs : I,II,III',
                             style: GoogleFonts.poppins(
-                              fontSize: 5.83.sp,
+                              fontSize: 5.5.sp,
                               fontWeight: FontWeight.w600,
-                              color: const Color.fromRGBO(31, 3, 3, 0.64)
+                              color: const Color.fromRGBO(31, 3, 3, 0.64),
+                              height: 0.2.h
                               ),
                             )
                           ],

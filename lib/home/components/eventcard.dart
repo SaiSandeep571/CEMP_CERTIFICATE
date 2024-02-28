@@ -1,4 +1,3 @@
-import 'package:cemp_certificate/home/components/dutycard.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:sizer/sizer.dart';
@@ -71,7 +70,25 @@ class Eventcard extends StatelessWidget {
                 ),
               ),
 
-              Dutyleavecard()
+              Container(
+                alignment: Alignment.center,
+            height: 10.23.h,
+            width: 7.63.w,
+            decoration: BoxDecoration(
+              borderRadius:BorderRadius.only(topRight: Radius.circular(1.17.h),bottomRight: Radius.circular(1.17.h)),
+              color:const Color.fromRGBO(76, 58, 157, 0.36),
+            ),
+            child: RotatedBox(
+                  quarterTurns: 135,
+                  child: Text('NO DUTY LEAVE',
+                  style: GoogleFonts.poppins(
+                    fontSize: 7.sp,
+                    fontWeight:FontWeight.w600,
+                    color: Color.fromRGBO(255, 255, 255, 0.39),
+                  ),
+                  ),
+                  ),
+            ),
               
               ],
             ),
