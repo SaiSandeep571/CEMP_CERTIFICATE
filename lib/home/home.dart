@@ -124,19 +124,21 @@ class _HomepageState extends State<Homepage> {
                     SizedBox(height: 1.h,),
 
                       Expanded(
-            child: ListView(
-              children: [
-               Diagolbox(),
-               Diagolbox(),
-               Diagolbox(),
-               Diagolbox(),
-               Diagolbox(),
-              ],
+            child: SizedBox(
+              child: ListView(
+                children: [
+                 Diagolbox(),
+                 Diagolbox(),
+                 Diagolbox(),
+                 Diagolbox(),
+                 Diagolbox(),
+                ],
+              ),
             ),
           ),
                    
                 
-                
+                Container( child: _is loading,)
                 
                 
                   ],
