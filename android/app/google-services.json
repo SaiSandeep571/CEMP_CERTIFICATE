@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "797787148412",
+    "project_id": "cem-certificate",
+    "storage_bucket": "cem-certificate.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:797787148412:android:094bc85d8144c767d539f9",
+        "android_client_info": {
+          "package_name": "com.example.cem_certificate"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCl9brDFA8VipGveN06VC-AG_9uhZUnyVQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:797787148412:android:95fa20b0095ecd7fd539f9",
+        "android_client_info": {
+          "package_name": "com.example.cemp_certificate"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCl9brDFA8VipGveN06VC-AG_9uhZUnyVQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

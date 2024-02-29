@@ -12,62 +12,77 @@ class Dashboard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  SafeArea(
+    return SafeArea(
       child: Scaffold(
         body: Column(
           children: [
-             InkWell(
-                onTap: () {
-                  Get.to(()=>Homepage());
-                },
-                child: Text("Home",style: TextStyle(color: Colors.red),
-                        ),
+            InkWell(
+              onTap: () {
+                Get.to(() => Homepage());
+              },
+              child: Text(
+                "Home",
+                style: TextStyle(color: Colors.red),
               ),
+            ),
 
-              SizedBox(height: 1.h,),
+            SizedBox(
+              height: 1.h,
+            ),
 
-              InkWell(
-                onTap: () {
-                  Get.to(()=>Eventcard());
-                },
-                child: Text("Event card",style: TextStyle(color: Colors.red),
-                        ),
-              ),         
+            // InkWell(
+            //   onTap: () {
+            //     Get.to(()=>Eventcard());
+            //   },
+            //   child: Text("Event card",style: TextStyle(color: Colors.red),
+            //           ),
+            // ),
 
-              SizedBox(height: 1.h,),
+            SizedBox(
+              height: 1.h,
+            ),
 
-              InkWell(
-                onTap: () {
-                  Get.to(()=>Dutyleavecard());
-                },
-                child: Text("Duty leave card",style: TextStyle(color: Colors.red),
-                        ),
+            InkWell(
+              onTap: () {
+                Get.to(() => Dutyleavecard());
+              },
+              child: Text(
+                "Duty leave card",
+                style: TextStyle(color: Colors.red),
               ),
+            ),
 
-             
+            SizedBox(
+              height: 1.h,
+            ),
 
-              SizedBox(height: 1.h,),
-
-              InkWell(
-                onTap: () {
-                  Get.to(()=>Downloadcard());
-                },
-                child: Text("Download card",style: TextStyle(color: Colors.red),
-                        ),
+            InkWell(
+              onTap: () {
+                Get.to(() => Downloadcard());
+              },
+              child: Text(
+                "Download card",
+                style: TextStyle(color: Colors.red),
               ),
+            ),
 
-               SizedBox(height: 1.h,),
+            SizedBox(
+              height: 1.h,
+            ),
 
-              InkWell(
-                onTap: () {
-                  Get.to(()=>Returncard());
-                },
-                child: Text("Returncard",style: TextStyle(color: Colors.red),
-                        ),
+            InkWell(
+              onTap: () {
+                Get.to(() => Returncard());
+              },
+              child: Text(
+                "Returncard",
+                style: TextStyle(color: Colors.red),
               ),
+            ),
 
-               SizedBox(height: 1.h,),
-           
+            SizedBox(
+              height: 1.h,
+            ),
           ],
         ),
       ),

@@ -4,15 +4,17 @@ publish_to: 'none'
 version: 0.1.0
 
 environment:
-  sdk: '>=3.2.6 <4.0.0'
+  sdk: '>=3.0.6 <4.0.0'
 
 dependencies:
+  firebase_core: ^2.25.5
   flutter:
     sdk: flutter
   get: ^4.6.6
   google_fonts: ^6.1.0
   loading_animation_widget: ^1.2.0+4
   sizer: ^2.0.15
+  cloud_firestore: ^4.15.6
 
 dev_dependencies:
   flutter_test:
